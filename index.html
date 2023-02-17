@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Geometry Genius</title>
 
+    <!-- daisyUI CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body>
-    
+    <header>
+        <nav class="container mx-auto">
+            <div class="navbar bg-sky-200 mt-10">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost normal-case text-xl">
+                    <img class="h-3/4" src="./image/logo.png" alt="">
+                  </a>
+                </div>
+                <div class="navbar-end">
+                  <button  class="btn bg-blue-600 border-0 ">
+                    <a>Blog</a>
+                  </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 
     <!-- JS File -->
     <script src="./js/script.js"></script>
 </body>
-</html>
 
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/programming-hero-web-course2/b7a5-geometry-genius-assignment-mfarhadattari.git
-git push -u origin main
+</html>
