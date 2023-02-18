@@ -52,7 +52,7 @@ function convertMUnite(uniteId) {
 }
 
 // cm to m converter function
-function meterConverter(elementId, uniteId){
+function meterConverter(elementId){
     const  cmArea = getTextElementValueById(elementId) ;
     const meterArea = (cmArea / 10000) ;
     setTextElementValueById(elementId, meterArea) ;
