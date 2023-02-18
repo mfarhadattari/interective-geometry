@@ -39,3 +39,13 @@ document.getElementById('rhombus-calculate-btn').addEventListener('click', funct
     const area = areaOfTriangle(diagonal1 , diagonal2) ;
     console.log(area) ;
 })
+
+// Pentagon Area Calculation
+document.getElementById('pentagon-calculate-btn').addEventListener('click', function(){
+    const perimeter = getInputFieldValueById('pentagon-perimeter-field') ;
+    const apothem = getInputFieldValueById('pentagon-apothem-field');
+    setTextElementValueById('pentagon-perimeter', perimeter) ;
+    setTextElementValueById('pentagon-apothem', apothem) ;
+    const area = areaOfTriangle(perimeter , apothem) ;
+    console.log(area) ;
+})
