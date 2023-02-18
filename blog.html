@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+
+    <!-- daisyUI CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="mx-auto p-5">
+            <div class="navbar bg-sky-200 mt-10 px-10">
+                <div class="navbar-start font-bold text-3xl text-black">
+                    <a>Blog</a>
+                </div>
+                <div class="navbar-end">
+                    <button id="geometry-genius-btn" class="btn btn-ghost">
+                        <img class="h-3/4" src="./image/logo.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mx-auto text-white ">
+            <h1 class="text-5xl font-bold text-center">Blogs</h1>
+            <article class="mt-10 w-3/4 mx-auto pb-10">
+
+                <!-- Blog-1 -->
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+                    <div class="collapse-title text-xl font-medium">
+                        <h1 class="font-bold text-xl">1. What is DOM and what is the purpose of DOM?</h1>
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-lg">Ans: DOM mean Document Object Model. It think every html element as object.
+                            DOM used to modify html document dynamically. We can manipulate javascript in html by DOM
+                            object. Every html tag is object of DOM.</p>
+                    </div>
+                </div>
+
+                <!-- Blog-2 -->
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+                    <div class="collapse-title text-xl font-medium">
+                        <h1 class="font-bold text-xl">2. How will you select HTML elements using DOM? Name the DOM methods.</h1>
+                    </div>
+                    <div class="collapse-content text-lg">
+                        <p>Ans: We can select html elements in 4 way using DOM.</p>
+                        <h1 class="font-bold">They Are: </h1>
+                        <ol class="list-decimal px-5">
+                            <li> getElementById() method. </li>
+                            <li> getElementsByClassName() method. </li>
+                            <li> getElementsByTagName() method. </li>
+                            <li> querySelector() & querySelectorAll() method. </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Blog-3 -->
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+                    <div class="collapse-title text-xl font-medium">
+                        <h1 class="font-bold text-xl">3. What is event bubble?</h1>
+                    </div>
+                    <div class="collapse-content text-lg">
+                        <p>Ans: Event bubbles are a type of DOM event propagation method. It propagate likes bubbles of water. It first works on the target element. Then acts on its parent element. Then again acts the parent element of parent element. It nested like this. Finally came to the HTML main element and stopped the propagation.</p>
+                    </div>
+                </div>
+
+                <!-- blog4 -->
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-5">
+                    <div class="collapse-title text-xl font-medium">
+                        <h1 class="font-bold text-xl">4. What is a callback function and why will you use it?</h1>
+                    </div>
+                    <div class="collapse-content text-lg">
+                        <p>Ans: When a function used as parameter of another function its called callback function . We use call back function on javascript event handler.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- js file -->
+    <script>
+        document.getElementById('geometry-genius-btn').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        })
+    </script>
+</body>
+
+</html>
