@@ -159,8 +159,8 @@ document
     const aAxis = getInputFieldValueById("a-Axis-field");
     const bAxis = getInputFieldValueById("b-Axis-field");
 
-    emptyField("bAxis-field", "bAxis-field");
-    
+    emptyField("a-Axis-field", "b-Axis-field");
+
     // number validation
     if (isNaN(aAxis) || isNaN(bAxis)) {
       alert("Please Input Only Number");
