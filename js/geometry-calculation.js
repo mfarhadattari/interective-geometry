@@ -1,14 +1,8 @@
-function areaOfTriangle(b, h){
-    const area = 0.5 * b * h ;
-    return area ;
-}
-
-function areaOfRectangle(w, l){
-    const area = w * l ;
-    return area ;
-}
-
-function areaOfEllipse(a, b){
-    const area = Math.PI * a * b ;
-    return area ;
-}
+document.getElementById('triangle-calculate-btn').addEventListener('click', function(){
+    const width = getInputFieldValueById('triangle-width-field') ;
+    const hight = getInputFieldValueById('triangle-hight-field') ;
+    setTextElementValueById('triangle-width', width) ;
+    setTextElementValueById('triangle-hight', hight) ;
+    const area = areaOfTriangle(width , hight) ;
+    console.log(area)
+})

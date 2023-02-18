@@ -10,7 +10,7 @@ function getInputFieldValueById(inputFieldId){
     return inputFieldValue ;
 }
 
-function setTextElementValueById(elementId){
+function setTextElementValueById(elementId , value){
     const element = document.getElementById(elementId) ;
-    element.innerText = element ;
+    element.innerText = value ;
 }
