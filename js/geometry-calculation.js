@@ -1,6 +1,6 @@
-function displayResult(resultElementId , AreaElementId, value){
-  document.getElementById(resultElementId).classList.remove('hidden') ;
-  setTextElementValueById( AreaElementId , value) ;
+function displayResult(resultElementId, AreaElementId, value) {
+  document.getElementById(resultElementId).classList.remove("hidden");
+  setTextElementValueById(AreaElementId, value);
 }
 // Triangular Area Calculation
 document
@@ -10,9 +10,8 @@ document
     const hight = getInputFieldValueById("triangle-hight-field");
     setTextElementValueById("triangle-width", width);
     setTextElementValueById("triangle-hight", hight);
-    let area = areaOfTriangle(width, hight);
-    area = area.toFixed(2);
-    displayResult('triangle-result' , 'triangle-area', area) ;
+    let area = triangleTypeFormula(width, hight);
+    displayResult("triangle-result", "triangle-area", area);
   });
 
 // Rectangular Area Calculation
@@ -23,10 +22,9 @@ document
     const length = getInputFieldValueById("rectangle-length-field");
     setTextElementValueById("rectangle-width", width);
     setTextElementValueById("rectangle-length", length);
-    let area = areaOfRectangle(width, length);
-    area = area.toFixed(2);
-    displayResult('rectangle-result' , 'rectangle-area', area) ;
-    
+    let area = rectangularTypeFormula(width, length);
+
+    displayResult("rectangle-result", "rectangle-area", area);
   });
 
 // Parallelogram Area Calculation
@@ -37,9 +35,9 @@ document
     const hight = getInputFieldValueById("parallelogram-hight-field");
     setTextElementValueById("parallelogram-width", width);
     setTextElementValueById("parallelogram-hight", hight);
-    let area = areaOfRectangle(width, hight);
-    area = area.toFixed(2);
-    displayResult('parallelogram-result', 'parallelogram-area', area);
+    let area = rectangularTypeFormula(width, hight);
+
+    displayResult("parallelogram-result", "parallelogram-area", area);
   });
 
 // Rhombus Area Calculation
@@ -50,9 +48,9 @@ document
     const diagonal2 = getInputFieldValueById("rhombus-diagonal2-field");
     setTextElementValueById("rhombus-diagonal1", diagonal1);
     setTextElementValueById("rhombus-diagonal2", diagonal2);
-    let area = areaOfTriangle(diagonal1, diagonal2);
-    area = area.toFixed(2);
-    displayResult('rhombus-result' , 'rhombus-area', area) ;
+    let area = triangleTypeFormula(diagonal1, diagonal2);
+
+    displayResult("rhombus-result", "rhombus-area", area);
   });
 
 // Pentagon Area Calculation
@@ -63,9 +61,9 @@ document
     const apothem = getInputFieldValueById("pentagon-apothem-field");
     setTextElementValueById("pentagon-perimeter", perimeter);
     setTextElementValueById("pentagon-apothem", apothem);
-    let area = areaOfTriangle(perimeter, apothem);
-    area = area.toFixed(2);
-    displayResult('pentagon-result', 'pentagon-area', area) ;
+    let area = triangleTypeFormula(perimeter, apothem);
+
+    displayResult("pentagon-result", "pentagon-area", area);
   });
 
 // Ellipse Area Calculation
@@ -77,6 +75,5 @@ document
     setTextElementValueById("a-Axis", aAxis);
     setTextElementValueById("b-Axis", bAxis);
     let area = areaOfEllipse(aAxis, bAxis);
-    area = area.toFixed(2);
-    displayResult('ellipse-result', 'ellipse-area', area) ;
+    displayResult("ellipse-result", "ellipse-area", area);
   });
