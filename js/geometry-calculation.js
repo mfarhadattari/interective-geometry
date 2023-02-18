@@ -4,19 +4,20 @@ document
   .addEventListener("click", function () {
     const base = getInputFieldValueById("triangle-base-field");
     const hight = getInputFieldValueById("triangle-hight-field");
+    
+    emptyField("triangle-base-field", "triangle-hight-field");
 
     // number validation
     if (isNaN(base) || isNaN(hight)) {
       alert("Please Input Only Number");
-      emptyField("triangle-base-field", "triangle-hight-field");
       return;
     }
     // negative number validation
     else if (base < 0 || hight < 0) {
       alert("Please Input Positive Value");
-      emptyField("triangle-base-field", "triangle-hight-field");
       return;
     }
+
 
     setTextElementValueById("triangle-base", base);
     setTextElementValueById("triangle-hight", hight);
@@ -33,19 +34,21 @@ document
   .addEventListener("click", function () {
     const width = getInputFieldValueById("rectangle-width-field");
     const length = getInputFieldValueById("rectangle-length-field");
+
+    emptyField("rectangle-width-field", "rectangle-length-field");
+
     // number validation
     if (isNaN(width) || isNaN(length)) {
       alert("Please Input Only Number");
-      emptyField("rectangle-width-field", "rectangle-length-field");
       return;
     }
 
     // negative number validation
     else if (width < 0 || length < 0) {
       alert("Please Input Positive Value");
-      emptyField("rectangle-width-field", "rectangle-length-field");
       return;
     }
+
 
     setTextElementValueById("rectangle-width", width);
     setTextElementValueById("rectangle-length", length);
@@ -63,16 +66,17 @@ document
   .addEventListener("click", function () {
     const width = getInputFieldValueById("parallelogram-width-field");
     const hight = getInputFieldValueById("parallelogram-hight-field");
+
+    emptyField("parallelogram-width-field", "parallelogram-hight-field");
+
     // number validation
     if (isNaN(width) || isNaN(hight)) {
       alert("Please Input Only Number");
-      emptyField("parallelogram-width-field", "parallelogram-hight-field");
       return;
     }
     // negative number validation
     else if (width < 0 || hight < 0) {
       alert("Please Input Positive Value");
-      emptyField("parallelogram-width-field", "parallelogram-hight-field");
       return;
     }
 
@@ -93,17 +97,17 @@ document
     const diagonal1 = getInputFieldValueById("rhombus-diagonal1-field");
     const diagonal2 = getInputFieldValueById("rhombus-diagonal2-field");
 
+    emptyField("rhombus-diagonal1-field", "rhombus-diagonal2-field");
+
     // number validation
     if (isNaN(diagonal1) || isNaN(diagonal2)) {
       alert("Please Input Only Number");
-      emptyField("rhombus-diagonal1-field", "rhombus-diagonal2-field");
       return;
     }
 
     // negative number validation
     else if (diagonal1 < 0 || diagonal1 < 0) {
       alert("Please Input Positive Value");
-      emptyField("rhombus-diagonal1-field", "rhombus-diagonal2-field");
       return;
     }
 
@@ -123,18 +127,18 @@ document
   .addEventListener("click", function () {
     const perimeter = getInputFieldValueById("pentagon-perimeter-field");
     const apothem = getInputFieldValueById("pentagon-apothem-field");
+    
+    emptyField("pentagon-perimeter-field", "pentagon-apothem-field");
 
     // number validation
     if (isNaN(perimeter) || isNaN(apothem)) {
       alert("Please Input Only Number");
-      emptyField("pentagon-perimeter-field", "pentagon-apothem-field");
       return;
     }
 
     // negative number validation
     else if (perimeter < 0 || apothem < 0) {
       alert("Please Input Positive Value");
-      emptyField("pentagon-perimeter-field", "pentagon-apothem-field");
       return;
     }
 
@@ -155,17 +159,17 @@ document
     const aAxis = getInputFieldValueById("a-Axis-field");
     const bAxis = getInputFieldValueById("b-Axis-field");
 
+    emptyField("bAxis-field", "bAxis-field");
+    
     // number validation
     if (isNaN(aAxis) || isNaN(bAxis)) {
       alert("Please Input Only Number");
-      emptyField("bAxis-field", "bAxis-field");
       return;
     }
 
     // negative number validation
     else if (aAxis < 0 || bAxis < 0) {
       alert("Please Input Positive Value");
-      emptyField("bAxis-field", "bAxis-field");
       return;
     }
 
