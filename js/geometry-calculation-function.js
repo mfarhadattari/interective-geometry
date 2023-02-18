@@ -1,15 +1,18 @@
-function triangleTypeFormula(b, h) {
+// Triangle type formula for : Triangle , Rhombus , Pentagon;
+function areaOfTriangleType(b, h) {
   let area = 0.5 * b * h;
   area = area.toFixed(2);
   return area;
 }
 
-function rectangularTypeFormula(w, l) {
+// Rectangular Type Formula for Rectangular and Parallelogram 
+function areaOfRectangularType(w, l) {
   let area = w * l;
   area = area.toFixed(2);
   return area;
 }
 
+// Ellipse Function
 function areaOfEllipse(a, b) {
   const pi = 3.1416;
   let area = pi * a * b;
