@@ -29,3 +29,13 @@ document.getElementById('parallelogram-calculate-btn').addEventListener('click',
     console.log(area) ;
 })
 
+
+// Rhombus Area Calculation
+document.getElementById('rhombus-calculate-btn').addEventListener('click', function(){
+    const diagonal1 = getInputFieldValueById('rhombus-diagonal1-field') ;
+    const diagonal2 = getInputFieldValueById('rhombus-diagonal2-field') ;
+    setTextElementValueById('rhombus-diagonal1', diagonal1) ;
+    setTextElementValueById('rhombus-diagonal2', diagonal2) ;
+    const area = areaOfTriangle(diagonal1 , diagonal2) ;
+    console.log(area) ;
+})
