@@ -11,6 +11,12 @@ document
       emptyField("triangle-base-field", "triangle-hight-field");
       return;
     }
+    // negative number validation
+    else if (base < 0 || hight < 0) {
+      alert("Please Input Positive Value");
+      emptyField("triangle-base-field", "triangle-hight-field");
+      return;
+    }
 
     setTextElementValueById("triangle-base", base);
     setTextElementValueById("triangle-hight", hight);
@@ -34,6 +40,13 @@ document
       return;
     }
 
+    // negative number validation
+    else if (width < 0 || length < 0) {
+      alert("Please Input Positive Value");
+      emptyField("rectangle-width-field", "rectangle-length-field");
+      return;
+    }
+
     setTextElementValueById("rectangle-width", width);
     setTextElementValueById("rectangle-length", length);
     let area = areaOfRectangularType(width, length);
@@ -53,6 +66,12 @@ document
     // number validation
     if (isNaN(width) || isNaN(hight)) {
       alert("Please Input Only Number");
+      emptyField("parallelogram-width-field", "parallelogram-hight-field");
+      return;
+    }
+    // negative number validation
+    else if (width < 0 || hight < 0) {
+      alert("Please Input Positive Value");
       emptyField("parallelogram-width-field", "parallelogram-hight-field");
       return;
     }
@@ -81,6 +100,13 @@ document
       return;
     }
 
+    // negative number validation
+    else if (diagonal1 < 0 || diagonal1 < 0) {
+      alert("Please Input Positive Value");
+      emptyField("rhombus-diagonal1-field", "rhombus-diagonal2-field");
+      return;
+    }
+
     setTextElementValueById("rhombus-diagonal1", diagonal1);
     setTextElementValueById("rhombus-diagonal2", diagonal2);
     let area = areaOfTriangleType(diagonal1, diagonal2);
@@ -105,6 +131,13 @@ document
       return;
     }
 
+    // negative number validation
+    else if (perimeter < 0 || apothem < 0) {
+      alert("Please Input Positive Value");
+      emptyField("pentagon-perimeter-field", "pentagon-apothem-field");
+      return;
+    }
+
     setTextElementValueById("pentagon-perimeter", perimeter);
     setTextElementValueById("pentagon-apothem", apothem);
     let area = areaOfTriangleType(perimeter, apothem);
@@ -125,6 +158,13 @@ document
     // number validation
     if (isNaN(aAxis) || isNaN(bAxis)) {
       alert("Please Input Only Number");
+      emptyField("bAxis-field", "bAxis-field");
+      return;
+    }
+
+    // negative number validation
+    else if (aAxis < 0 || bAxis < 0) {
+      alert("Please Input Positive Value");
       emptyField("bAxis-field", "bAxis-field");
       return;
     }
