@@ -18,3 +18,14 @@ document.getElementById('rectangle-calculate-btn').addEventListener('click', fun
     const area = areaOfRectangle(width , length) ;
     console.log(area) ;
 })
+
+// Parallelogram Area Calculation
+document.getElementById('parallelogram-calculate-btn').addEventListener('click', function(){
+    const width = getInputFieldValueById('parallelogram-width-field') ;
+    const hight = getInputFieldValueById('parallelogram-hight-field') ;
+    setTextElementValueById('parallelogram-width', width) ;
+    setTextElementValueById('parallelogram-hight', hight) ;
+    const area = areaOfRectangle(width , hight) ;
+    console.log(area) ;
+})
+
