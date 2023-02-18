@@ -3,36 +3,20 @@ document.getElementById('blog-btn').addEventListener('click', function(){
     window.location.href = 'blog.html' ;
 })
 
-// get input field value as number by id function
-function getInputFieldValueById(inputFieldId){
-    const inputField = document.getElementById(inputFieldId) ;
-    const inputFieldValueString = inputField.value ;
-    const inputFieldValue = parseFloat(inputFieldValueString) ;
-    return inputFieldValue ;
-}
 
-// Set Text field value by id function
-function setTextElementValueById(elementId , value){
-    const element = document.getElementById(elementId) ;
-    element.innerText = value ;
+// Random bg color for card 
+function rgbColorValue() {
+    const rgbValue = Math.floor(Math.random() * 255);
+    return rgbValue ;
 }
-
-// Set Input Field Value by id
-function setInputValueById(inputFieldId, value){
-    const inputField = document.getElementById(inputFieldId) ;
-    inputField.value = value ;
+function alphaValue() {
+    const alphaValue = (Math.random());
+    return alphaValue ;
 }
-
-// result display function
-function displayResult(resultElementId, AreaElementId, value) {
-    document.getElementById(resultElementId).classList.remove("hidden");
-    setTextElementValueById(AreaElementId, value);
-  }
-
-// empty input Field
-function emptyField(fieldId1 , fieldId2){
-    const empty = '' ;
-    setInputValueById(fieldId1, empty);
-    setInputValueById(fieldId2, empty);
+const cards = document.getElementsByClassName('card') ;
+for(const card of cards){
+    card.addEventListener('mouseenter', function(){
+        card.style.backgroundColor = 'rgba('+rgbColorValue() +','+rgbColorValue() 
+            + ',' + rgbColorValue() + ' ,'+alphaValue()+' )'
+    })
 }
-  
