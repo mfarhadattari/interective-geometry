@@ -162,10 +162,12 @@
                                     <span id="pentagon-apothem">a</span>
                                 </h1>
                                 <div class="flex items-center  my-5 font-bold text-lg">
-                                    <label class="w-1/2" for=""><input id="pentagon-perimeter-field" class="border-2 w-1/2 p-1 rounded-lg" type="text"
-                                            placeholder="p"> cm</label>
-                                    <label class="w-1/2 " for=""><input id="pentagon-apothem-field" class="border-2 w-1/2 p-1 rounded-lg"
-                                            type="text" placeholder="b"> cm</label>
+                                    <label class="w-1/2" for=""><input id="pentagon-perimeter-field"
+                                            class="border-2 w-1/2 p-1 rounded-lg" type="text" placeholder="p">
+                                        cm</label>
+                                    <label class="w-1/2 " for=""><input id="pentagon-apothem-field"
+                                            class="border-2 w-1/2 p-1 rounded-lg" type="text" placeholder="b">
+                                        cm</label>
                                 </div>
                                 <div class="card-actions justify-end">
                                     <button id="pentagon-calculate-btn"
@@ -186,10 +188,12 @@
                                     <span id="b-Axis">b</span>
                                 </h1>
                                 <div class="flex items-center  my-5 font-bold text-lg">
-                                    <label class="w-1/2" for=""><input id="a-Axis-field" class="border-2 w-1/2 p-1 rounded-lg" type="text"
-                                            placeholder="a"> cm</label>
-                                    <label class="w-1/2 " for=""><input id="b-Axis-field" class="border-2 w-1/2 p-1 rounded-lg"
-                                            type="text" placeholder="b"> cm</label>
+                                    <label class="w-1/2" for=""><input id="a-Axis-field"
+                                            class="border-2 w-1/2 p-1 rounded-lg" type="text" placeholder="a">
+                                        cm</label>
+                                    <label class="w-1/2 " for=""><input id="b-Axis-field"
+                                            class="border-2 w-1/2 p-1 rounded-lg" type="text" placeholder="b">
+                                        cm</label>
                                 </div>
                                 <div class="card-actions justify-end">
                                     <button id="ellipse-calculate-btn"
@@ -201,8 +205,21 @@
                 </div>
 
                 <!-- Calculate Section -->
-                <div class="border-2 rounded-lg py-5">
+                <div class="border-2 rounded-lg p-5">
                     <h1 class="font-bold text-xl text-center underline">Area Calculation</h1>
+                    <div class="font-medium mt-5 w-full mx-auto">
+                        <ol id="result-screen" class="list-decimal">
+                            <li id="triangle-result" class="hidden">
+                                <div class="flex justify-between">
+                                    <span>Triangle</span>
+                                    <h1><span id="triangle-area"></span>cm</h1>
+                                    <button
+                                        class="bg-sky-700 px-2 py-1 text-xs text-white font-normal rounded-lg">Covert to
+                                        m<sup>2</sup></button>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>
