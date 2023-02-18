@@ -1,3 +1,7 @@
+function displayResult(resultElementId , AreaElementId, value){
+  document.getElementById(resultElementId).classList.remove('hidden') ;
+  setTextElementValueById( AreaElementId , value) ;
+}
 // Triangular Area Calculation
 document
   .getElementById("triangle-calculate-btn")
@@ -8,8 +12,7 @@ document
     setTextElementValueById("triangle-hight", hight);
     let area = areaOfTriangle(width, hight);
     area = area.toFixed(2);
-    document.getElementById('triangle-result').classList.remove('hidden') ;
-    setTextElementValueById('triangle-area' , area) ;
+    displayResult('triangle-result' , 'triangle-area', area) ;
   });
 
 // Rectangular Area Calculation
@@ -22,6 +25,8 @@ document
     setTextElementValueById("rectangle-length", length);
     let area = areaOfRectangle(width, length);
     area = area.toFixed(2);
+    displayResult('rectangle-result' , 'rectangle-area', area) ;
+    
   });
 
 // Parallelogram Area Calculation
@@ -34,7 +39,7 @@ document
     setTextElementValueById("parallelogram-hight", hight);
     let area = areaOfRectangle(width, hight);
     area = area.toFixed(2);
-    console.log(area);
+    displayResult('parallelogram-result', 'parallelogram-area', area);
   });
 
 // Rhombus Area Calculation
@@ -47,7 +52,7 @@ document
     setTextElementValueById("rhombus-diagonal2", diagonal2);
     let area = areaOfTriangle(diagonal1, diagonal2);
     area = area.toFixed(2);
-    console.log(area);
+    displayResult('rhombus-result' , 'rhombus-area', area) ;
   });
 
 // Pentagon Area Calculation
@@ -60,7 +65,7 @@ document
     setTextElementValueById("pentagon-apothem", apothem);
     let area = areaOfTriangle(perimeter, apothem);
     area = area.toFixed(2);
-    console.log(area);
+    displayResult('pentagon-result', 'pentagon-area', area) ;
   });
 
 // Ellipse Area Calculation
@@ -73,5 +78,5 @@ document
     setTextElementValueById("b-Axis", bAxis);
     let area = areaOfEllipse(aAxis, bAxis);
     area = area.toFixed(2);
-    console.log(area);
+    displayResult('ellipse-result', 'ellipse-area', area) ;
   });

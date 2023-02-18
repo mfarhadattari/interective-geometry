@@ -38,11 +38,11 @@
 
     <main>
         <section class="p-5 mx-auto mt-10">
-            <div class="grid lg:grid-cols-4 gap-5">
+            <div class="grid lg:grid-cols-3 xl:grid-cols-4 gap-5">
 
                 <!-- Geometry Section -->
-                <div class="lg:col-span-3">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="lg:col-span-2 xl:grid-cols-3">
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
 
                         <!-- Triangular Area -->
                         <div class="card bg-base-100 border-2 pt-5 shadow-xl w-full">
@@ -209,10 +209,67 @@
                     <h1 class="font-bold text-xl text-center underline">Area Calculation</h1>
                     <div class="font-medium mt-5 w-full mx-auto">
                         <ol id="result-screen" class="list-decimal">
+
+                            <!-- Triangle Result Display -->
                             <li id="triangle-result" class="hidden">
                                 <div class="flex justify-between">
                                     <span>Triangle</span>
                                     <h1><span id="triangle-area"></span>cm</h1>
+                                    <button
+                                        class="bg-sky-700 px-2 py-1 text-xs text-white font-normal rounded-lg">Covert to
+                                        m<sup>2</sup></button>
+                                </div>
+                            </li>
+                            
+                            <!-- Rectangle Result Display -->
+                            <li id="rectangle-result" class="hidden mt-5">
+                                <div class="flex justify-between">
+                                    <span>Rectangle</span>
+                                    <h1><span id="rectangle-area"></span>cm</h1>
+                                    <button
+                                        class="bg-sky-700 px-2 py-1 text-xs text-white font-normal rounded-lg">Covert to
+                                        m<sup>2</sup></button>
+                                </div>
+                            </li>
+
+                            <!-- Parallelogram Result Display -->
+                            <li id="parallelogram-result" class="hidden mt-5">
+                                <div class="flex justify-between">
+                                    <span>Parallelogram</span>
+                                    <h1><span id="parallelogram-area"></span>cm</h1>
+                                    <button
+                                        class="bg-sky-700 px-2 py-1 text-xs text-white font-normal rounded-lg">Covert to
+                                        m<sup>2</sup></button>
+                                </div>
+                            </li>
+
+                            <!-- Rhombus Result Display -->
+                            <li id="rhombus-result" class="hidden mt-5">
+                                <div class="flex justify-between">
+                                    <span>Rhombus</span>
+                                    <h1><span id="rhombus-area"></span>cm</h1>
+                                    <button
+                                        class="bg-sky-700 px-2 py-1 text-xs text-white font-normal rounded-lg">Covert to
+                                        m<sup>2</sup></button>
+                                </div>
+                            </li>
+
+                            <!-- Pentagon Result Display -->
+                            <li id="pentagon-result" class="hidden mt-5">
+                                <div class="flex justify-between">
+                                    <span>Pentagon</span>
+                                    <h1><span id="pentagon-area"></span>cm</h1>
+                                    <button
+                                        class="bg-sky-700 px-2 py-1 text-xs text-white font-normal rounded-lg">Covert to
+                                        m<sup>2</sup></button>
+                                </div>
+                            </li>
+
+                            <!-- Ellipse Area Display -->
+                            <li id="ellipse-result" class="hidden mt-5">
+                                <div class="flex justify-between">
+                                    <span>Ellipse</span>
+                                    <h1><span id="ellipse-area"></span>cm</h1>
                                     <button
                                         class="bg-sky-700 px-2 py-1 text-xs text-white font-normal rounded-lg">Covert to
                                         m<sup>2</sup></button>
